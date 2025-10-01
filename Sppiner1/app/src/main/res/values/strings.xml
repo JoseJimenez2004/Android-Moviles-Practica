@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Nombres en Spinner</string>
+    <string name="xsops">Selecciona un nombre</string>
+    <string name="action_settings">Ajustes</string>
+    <string-array name="xops">
+        <item>Ana</item>
+        <item>Luis</item>
+        <item>María</item>
+        <item>Carlos</item>
+        <item>Sofía</item>
+        <item>Pedro</item>
+        <item>Laura</item>
+        <item>Javier</item>
+        <item>Isabel</item>
+        <item>Diego</item>
+    </string-array>
+</resources>

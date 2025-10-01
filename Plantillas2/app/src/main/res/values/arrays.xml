@@ -1,0 +1,15 @@
+<resources>
+    <string-array name="lista_cargo">
+        <item>Estudiante</item>
+        <item>Profesor</item>
+        <item>Administrativo</item>
+        <item>Directivo</item>
+    </string-array>
+
+    <string-array name="lista_estado_civil">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Divorciado</item>
+        <item>Viudo</item>
+    </string-array>
+</resources>
