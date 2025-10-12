@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Examen Primer Parcial</string>
+    <string-array name="colores_array">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+    </string-array>
+</resources>

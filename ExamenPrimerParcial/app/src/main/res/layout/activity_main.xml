@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+    <GridLayout
+        android:id="@+id/grid_patron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <Button android:id="@+id/b1" android:text="1" style="@style/BotonPatron"/>
+        <Button android:id="@+id/b2" android:text="2" style="@style/BotonPatron"/>
+        <Button android:id="@+id/b3" android:text="3" style="@style/BotonPatron"/>
+        <Button android:id="@+id/b4" android:text="4" style="@style/BotonPatron"/>
+        <Button android:id="@+id/b5" android:text="5" style="@style/BotonPatron"/>
+        <Button android:id="@+id/b6" android:text="6" style="@style/BotonPatron"/>
+        <Button android:id="@+id/b7" android:text="7" style="@style/BotonPatron"/>
+        <Button android:id="@+id/b8" android:text="8" style="@style/BotonPatron"/>
+        <Button android:id="@+id/b9" android:text="9" style="@style/BotonPatron"/>
+    </GridLayout>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btn_guardar"
+        android:text="Guardar Patrón"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#00C853"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+</FrameLayout>

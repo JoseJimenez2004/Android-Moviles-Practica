@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/containerRoot"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ===================== PANTALLA PRINCIPAL ===================== -->
+        <LinearLayout
+            android:id="@+id/screenPattern"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pinta tu patrón (3 nodos)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btnForgotPattern"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Olvidé patrón" />
+
+                <Button
+                    android:id="@+id/btnValidatePattern"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Validar patrón" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNewUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nuevo usuario"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnListUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Listar usuarios (BD)"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- ===================== PANTALLA NUEVO USUARIO ===================== -->
+        <LinearLayout
+            android:id="@+id/screenNewUser"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta de usuario"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etPatternEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patrón (ej. 132)"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnSaveUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar usuario"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <!-- ===================== PANTALLA DE DIBUJO ===================== -->
+        <LinearLayout
+            android:id="@+id/screenDisplay"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Configura color y repeticiones"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/spinnerColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repeticiones (miles)"
+                android:layout_marginTop="8dp" />
+
+            <NumberPicker
+                android:id="@+id/npRepetitions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnGoDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generar imagen"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnBackFromDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volver"
+                android:layout_marginTop="8dp" />
+
+            <!-- Vista personalizada para el patrón -->
+            <View
+                android:id="@+id/patternView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF" />
+
+            <!-- Vista personalizada para dibujar -->
+            <View
+                android:id="@+id/drawingCanvas"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

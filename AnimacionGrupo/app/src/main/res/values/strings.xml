@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Animación</string>
+    <string name="oscila">OSCILA</string>
+    <string name="gira">GIRA</string>
+    <string name="esfuma">ESFUMA</string>
+    <string name="mueve">MUEVE</string>
+    <string name="contrae">CONTRAE</string>
+    <string name="aumenta">AUMENTA</string>
+    <string name="detener">DETENER</string>
+    <string name="course_rating">Desarrollo</string>
+    <string name="course_name">Móviles</string>
+</resources>

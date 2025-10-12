@@ -1,0 +1,114 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ipn" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/oscila"
+            style="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/oscila"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/gira"
+            style="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/gira"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/esfuma"
+            style="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/esfuma"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/mueve"
+            style="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/mueve"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/contrae"
+            style="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/contrae"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/aumenta"
+            style="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/aumenta"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/detener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/detener" />
+
+</LinearLayout>

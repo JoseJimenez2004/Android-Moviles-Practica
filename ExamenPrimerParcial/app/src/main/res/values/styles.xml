@@ -1,0 +1,9 @@
+<resources>
+    <style name="BotonPatron">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">@drawable/patron_circle_background</item>
+        <item name="android:textColor">#4A148C</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
