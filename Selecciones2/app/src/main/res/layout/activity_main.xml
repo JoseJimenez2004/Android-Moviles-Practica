@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/xtvtit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Tus deportes favoritos:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <!-- CheckBox: Fútbol Soccer -->
+    <CheckBox
+        android:id="@+id/xchbsoccer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Fútbol Soccer" />
+
+    <!-- CheckBox: Fútbol Americano -->
+    <CheckBox
+        android:id="@+id/xchbamericano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Fútbol Americano" />
+
+    <!-- CheckBox: Béisbol -->
+    <CheckBox
+        android:id="@+id/xchbbeisbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Béisbol" />
+
+    <!-- CheckBox: Tenis -->
+    <CheckBox
+        android:id="@+id/xchbtenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Tenis" />
+
+    <!-- CheckBox: Otro -->
+    <CheckBox
+        android:id="@+id/xchotro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Otro:" />
+
+    <!-- Campo de texto “Otro” (oculto hasta marcar el CheckBox) -->
+    <EditText
+        android:id="@+id/xetotro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:hint="Describir..."
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLines="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <!-- Botón Confirmar -->
+    <Button
+        android:id="@+id/xbn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Confirmar"
+        android:onClick="opcion" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora avanzada"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Valor 1"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/tv0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Valor 2"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/et1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <RadioButton android:id="@+id/r1" android:text="+ Suma" />
+        <RadioButton android:id="@+id/r2" android:text="- Resta" />
+        <RadioButton android:id="@+id/r3" android:text="* Producto" />
+        <RadioButton android:id="@+id/r4" android:text="/ Cociente" />
+        <RadioButton android:id="@+id/r5" android:text="^ Potencia" />
+        <RadioButton android:id="@+id/r6" android:text="√ Raíz cuadrada" />
+        <RadioButton android:id="@+id/r7" android:text="sen(x) Seno" />
+        <RadioButton android:id="@+id/r8" android:text="cos/tan Coseno y Tangente" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/xbn"
+        android:text="Calcular"
+        android:onClick="calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grupo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/xtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solución:"
+        app:layout_constraintTop_toBottomOf="@+id/xbn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
