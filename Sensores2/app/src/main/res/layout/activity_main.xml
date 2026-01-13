@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*** Acelerómetro ***"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En X:" />
+
+        <TextView
+            android:id="@+id/xtvX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceleración en X" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En Y:" />
+
+        <TextView
+            android:id="@+id/xtvY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceleración en Y" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En Z:" />
+
+        <TextView
+            android:id="@+id/xtvZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceleración en Z" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Módulo (|A|):" />
+
+        <TextView
+            android:id="@+id/xtvA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceleración total" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceleración máxima:" />
+
+        <TextView
+            android:id="@+id/xtvM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Máxima aceleración" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gravedad estándar:" />
+
+        <TextView
+            android:id="@+id/xtvG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9.8 m/s²" />
+
+    </LinearLayout>
+</ScrollView>

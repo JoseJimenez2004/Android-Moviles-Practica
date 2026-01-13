@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Lado Izquierdo -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <VideoView
+                android:id="@+id/videoIzquierdo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <mx.ipn.escuela.proyecto2_realidadvirtual.VistaCubo
+                android:id="@+id/cuboIzquierdo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <!-- Lado Derecho -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <VideoView
+                android:id="@+id/videoDerecho"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <mx.ipn.escuela.proyecto2_realidadvirtual.VistaCubo
+                android:id="@+id/cuboDerecho"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

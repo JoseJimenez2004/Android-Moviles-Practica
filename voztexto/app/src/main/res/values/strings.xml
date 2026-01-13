@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Voz a Texto</string>
+    <string name="habla_ahora">Habla ahora...</string>
+    <string name="presiona_para_hablar">Presiona el botón para hablar</string>
+</resources>

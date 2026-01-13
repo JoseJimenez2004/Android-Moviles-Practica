@@ -26,7 +26,7 @@ class Renderizador implements GLSurfaceView.Renderer {
         gl.glShadeModel(GL10.GL_SMOOTH);
         gl.glDisable(GL10.GL_DITHER);
         mc.loadTexture(gl);
-        gl.glEnable(GL10.GL_TEXTURE_2D);
+'¿'        gl.glEnable(GL10.GL_TEXTURE_2D);
     }
     @Override
     public void onSurfaceChanged(GL10 gl, int w, int h) {

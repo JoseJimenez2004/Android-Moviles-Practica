@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="iteraciones_array">
+        <item>1000</item>
+        <item>10000</item>
+        <item>100000</item>
+    </string-array>
+
+    <string-array name="tipos_triangulo_array">
+        <item>Equilátero</item>
+        <item>Isósceles</item>
+        <item>Rectángulo</item>
+    </string-array>
+</resources>

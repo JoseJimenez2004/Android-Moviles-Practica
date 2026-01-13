@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el Color:" />
+
+        <RadioGroup
+            android:id="@+id/rgColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbRojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rojo" />
+
+            <RadioButton
+                android:id="@+id/rbVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verde" />
+
+            <RadioButton
+                android:id="@+id/rbAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Azul" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Seleccione las Iteraciones:" />
+
+        <RadioGroup
+            android:id="@+id/rgIteraciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000" />
+
+            <RadioButton
+                android:id="@+id/rb10000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000" />
+
+            <RadioButton
+                android:id="@+id/rb100000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100000" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Seleccione el Tipo de Triángulo:" />
+
+        <RadioGroup
+            android:id="@+id/rgTipoTriangulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbEquilatero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equilátero" />
+
+            <RadioButton
+                android:id="@+id/rbIsosceles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isósceles" />
+
+            <RadioButton
+                android:id="@+id/rbRectangulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rectángulo" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/btnDibujarFigura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Dibujar Figura" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
